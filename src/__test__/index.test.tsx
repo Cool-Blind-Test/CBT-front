@@ -1,14 +1,12 @@
-import { render, screen } from '@testing-library/react'
-import Home from '../pages/index'
+import { render, screen } from "@testing-library/react";
+import Home from "../pages/index";
 
-describe('Home', () => {
-  it('renders a heading', () => {
-    render(<Home />)
+describe("Home", () => {
+  it("renders signUp button", async () => {
+    render(<Home />);
 
-    const heading = screen.getByRole('heading', {
-      name: /welcome to next\.js!/i,
-    })
+    const button = await screen.findByText("home:signUp");
 
-    expect(heading).toBeInTheDocument()
-  })
-})
+    expect(button).toBeInTheDocument();
+  });
+});
