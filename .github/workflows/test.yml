@@ -1,0 +1,16 @@
+name: test-jest
+
+on:
+  push:
+    branches:
+      - "*"
+
+jobs:
+  test-jest:
+    runs_on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        run: yarn
+      - name: Run tests
+        run: yarn run test
