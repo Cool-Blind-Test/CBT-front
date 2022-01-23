@@ -1,0 +1,8 @@
+{
+  "username": "Pseudo",
+  "email": "Email",
+  "password": "Mot de passe",
+  "confirmPassword": "Confirmer le mot de passe",
+  "alreadyRegistered": "Vous avez déjà un compte ?",
+  "signInHere": "Connectez vous"
+}
