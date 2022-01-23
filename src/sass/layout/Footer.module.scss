@@ -1,0 +1,38 @@
+@import "../utils/variables";
+
+.footer {
+  background-color: $rich-black;
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+.content {
+  width: 100%;
+  @extend .columnAlign;
+}
+
+.topRow {
+  width: 20%;
+  @extend .columnAlign;
+
+  .logos {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    .logo {
+      transition: all 200ms ease-in-out;
+      &:hover {
+        color: $blue-green;
+      }
+    }
+  }
+}
+
+.lists {
+  ul {
+    list-style: none;
+  }
+  @extend .rowAlign;
+}

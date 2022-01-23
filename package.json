@@ -9,12 +9,17 @@
     "test": "jest"
   },
   "dependencies": {
+    "@apollo/client": "^3.5.7",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
+    "dotenv": "^14.2.0",
+    "graphql": "^16.2.0",
     "jest": "^27.4.7",
     "next": "12.0.8",
+    "next-translate": "^1.2.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "react-feather": "^2.0.9",
     "sass": "^1.49.0"
   },
   "devDependencies": {

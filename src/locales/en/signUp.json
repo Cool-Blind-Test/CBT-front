@@ -1,0 +1,8 @@
+{
+  "username": "Username",
+  "email": "Email",
+  "password": "Password",
+  "confirmPassword": "Confirm Password",
+  "alreadyRegistered": "Already registered ?",
+  "signInHere": "Sign in here"
+}

@@ -1,0 +1,65 @@
+@import "../utils/variables";
+
+.container {
+  padding: 0 2rem;
+}
+
+.main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.buttons {
+  width: 100%;
+  @extend .columnAlign;
+  justify-content: center;
+  margin-top: 2%;
+  .button {
+    width: 20%;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    margin-bottom: 1%;
+  }
+  .inscription {
+    @extend .button;
+    background-color: $blue-green;
+    color: $raisin-black;
+    transition: all 400ms ease-in-out;
+
+    &:hover {
+      background-color: $raisin-black;
+      color: $blue-green;
+      border: 1px solid $blue-green;
+    }
+  }
+  .connexion {
+    @extend .button;
+    background-color: $raisin-black;
+    color: $blue-green;
+    transition: all 400ms ease-in-out;
+    border: 1px solid $blue-green;
+
+    &:hover {
+      background-color: $blue-green;
+      color: $raisin-black;
+    }
+  }
+  .anonyme {
+    @extend .button;
+    transition: all 400ms ease-in-out;
+    &:hover {
+      color: $blue-green;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
