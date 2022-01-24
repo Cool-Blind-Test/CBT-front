@@ -1,5 +1,4 @@
-@import "./utils/variables";
-
+@use "./index" as *;
 html,
 body {
   padding: 0;
