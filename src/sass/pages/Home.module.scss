@@ -1,4 +1,4 @@
-@import "../utils/variables";
+@use "../index" as *;
 
 .container {
   padding: 0 2rem;
