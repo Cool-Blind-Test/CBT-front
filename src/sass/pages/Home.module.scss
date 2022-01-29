@@ -10,6 +10,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 .buttons {
   width: 100%;
@@ -57,9 +58,42 @@
     }
   }
 }
-@media (max-width: 600px) {
-  .grid {
+.chevronDownDiv {
+  margin-bottom: -5%;
+  margin-top: 5%;
+  .chevronDown {
+    transition: all 200ms ease-in-out;
+    &:hover {
+      color: $blue-green;
+    }
+  }
+}
+// About
+.about {
+  width: 85%;
+  @extend .columnStart;
+  margin-bottom: 10%;
+  margin-top: 5%;
+  .title {
+    font-size: 2rem;
+  }
+}
+
+@include phone {
+  .button {
+    width: 90%;
+    margin-bottom: 5%;
+  }
+  .about {
     width: 100%;
-    flex-direction: column;
+  }
+  .chevronDownDiv {
+    margin-bottom: -20%;
+    margin-top: 20%;
+  }
+}
+@include tablet {
+  .button {
+    width: 70%;
   }
 }
