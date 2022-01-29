@@ -1,5 +1,7 @@
 {
   "signUp": "Inscription",
   "signIn": "Connexion",
-  "anon": "Anonyme"
+  "anon": "Anonyme",
+  "aboutCBT": "Qu'est-ce que CBT ?",
+  "howToPlay": "Comment jouer ?"
 }
